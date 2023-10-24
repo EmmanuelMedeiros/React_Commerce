@@ -24,7 +24,7 @@ function WishList() {
             <ProfileHeader/>
 
             {productList.map(product => (
-                <div className="md:w-3/5
+                <div className="md:w-3/5 md:px-3
                 my-5 bg-dark-border w-11/12 block mx-auto rounded-md py-3">
 
                 <ul className="mt-1 grid grid-cols-2">
