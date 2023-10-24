@@ -24,26 +24,29 @@ function WishList() {
             <ProfileHeader/>
 
             {productList.map(product => (
-                <div className="md:w-3/5 md:px-3
-                my-5 bg-dark-border w-11/12 block mx-auto rounded-md py-3">
+                <div className="md:w-3/5 
+                px-3 text-white my-5 bg-dark-border w-11/12 block mx-auto rounded-md py-3">
 
                 <ul className="mt-1 grid grid-cols-2">
 
-                    <span className="md:h-52 md:w-60
+                    <span className="md:h-52 md:w-3/5
                     w-11/12 h-32 block bg-darkest-border rounded-lg"></span>
 
-                    <div className="">
+                    <div className="md:-ml-20">
                         <li>
-                            <h2 className="font-bold">{product.title}</h2>
+                            <h2 className="md:text-xl
+                            font-bold">{product.title.length > 30 ? product.title.substring(0, 30) + '...' : product.title}</h2>
                         </li>
                         <li>
-                            <h3 className="w-3/5 text-xs opacity-80">{product.owner}</h3>
+                            <h3 className="md:text-lg
+                            w-3/5 text-xs opacity-80">{product.owner}</h3>
                         </li>
                         <li>
                             <h3 className="w-3/5 text-xl opacity-80">{product.rating}</h3>
                         </li>
                         <li>
-                            <h3 className="w-3/5 pt-24 h-32 font-medium">{product.price}</h3>
+                            <h3 className="md:pt-24
+                            w-3/5 font-medium text-xl">{product.price}</h3>
                         </li>
                     </div>
                 </ul>
