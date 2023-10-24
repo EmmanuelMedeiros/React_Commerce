@@ -15,6 +15,12 @@ function WishList() {
             owner: "SAMUNG",
             rating: "* * * * *",
             price: "R$ 900,00"
+        },
+        {
+            title: "Placa de vídeo RXT 55000, 8GB, DUAL FAN, OC ENABLED",
+            owner: "Asus tecnologies",
+            rating: "* * * *",
+            price: "R$ 3200,00"
         }
     ]
 
@@ -46,7 +52,7 @@ function WishList() {
                         </li>
                         <li>
                             <h3 className="md:pt-24
-                            w-3/5 font-medium text-xl">{product.price}</h3>
+                            w-4/5 font-medium text-xl">{product.price}</h3>
                         </li>
                     </div>
                 </ul>

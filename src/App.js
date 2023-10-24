@@ -4,7 +4,7 @@ import WishList from "./components/WishList";
 function App() {
   return (
     <div>
-      <WishList/>
+      <ProfilePage/>
     </div>
   )
 }
