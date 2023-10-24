@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       "logo-blue": "#219EBC",
       "dark-border": '#82BCD7',
+      "darkest-border": '#457F9A',
       "white": '#FFFFFF'
     },
     extend: {},

@@ -3,6 +3,13 @@ import ProfileHeader from "./ProfileHeader"
 
 function ProfilePage() {
 
+    const person = {
+        name: "Feio",
+        company: "FeuraCompany",
+        email: "feio123@hotmail.com",
+        cpf: "naotenho"
+    }
+
     return(
         <div className="py-11">
             
@@ -33,15 +40,15 @@ function ProfilePage() {
                     </label>
 
                     <input className="
-                    mt-3 rounded-sm w-full h-10 px-2 -mx-2 border-none"
-                    type="text" name="nickname" id="nickname" placeholder="Your name"/>
+                    mt-3 rounded-sm w-full h-10 px-2 -mx-2 border-none placeholder:opacity-80"
+                    type="text" name="nickname" id="nickname" placeholder={person.name}/>
 
                     <label htmlFor="">
                         <h2 className="mt-4 -ml-1 font-bold text-white text-lg">Company Name</h2>
                     </label>
 
-                    <input className="mt-3 rounded-sm w-full h-10 px-2 -mx-2 border-none"
-                    type="text" name="nickname" id="nickname" placeholder="Enterprise name"/>
+                    <input className="mt-3 rounded-sm w-full h-10 px-2 -mx-2 border-none placeholder:opacity-80"
+                    type="text" name="nickname" id="nickname" placeholder={person.company}/>
 
 
                     <ul className="mt-10 text-white">
@@ -57,17 +64,17 @@ function ProfilePage() {
                         <h2 className="mt-6 -ml-1 font-bold text-white text-lg">Email</h2>
                     </label>
 
-                    <input className="mt-3 rounded-sm w-full h-10 px-2 -mx-2 border-none"
-                    type="text" name="nickname" id="nickname" placeholder="youremail@hotmail.com"/>
+                    <input className="mt-3 rounded-sm w-full h-10 px-2 -mx-2 border-none placeholder:opacity-80"
+                    type="text" name="nickname" id="nickname" placeholder={person.email}/>
 
                     <label htmlFor="">
                         <h2 className="mt-6 -ml-1 font-bold text-white text-lg">CPF</h2>
                     </label>
 
-                    <input className="mt-3 rounded-sm w-full h-10 px-2 -mx-2 border-none"
-                    type="text" name="nickname" id="nickname" placeholder="000.000.000-00"/>
+                    <input className="mt-3 rounded-sm w-full h-10 px-2 -mx-2 border-none placeholder:opacity-80"
+                    type="text" name="nickname" id="nickname" placeholder={person.cpf}/>
 
-                    <button className="mt-7 text-white text-xl font-bold bg-logo-blue block mx-auto rounded-md px-5 h-12" 
+                    <button className="mt-7 text-white text-xl font-bold bg-logo-blue block mx-auto rounded-md px-5 h-12 hover:bg-darkest-border" 
                     type="submit">Save Changes</button>
                 </form>
             </div>

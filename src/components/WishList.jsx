@@ -2,46 +2,54 @@ import ProfileHeader from "./ProfileHeader"
 
 
 function WishList() {
+
+    const productList = [
+        {
+            title: "Mouse sem fio, luzes doasd oasmdo kasjmdk asdjas kdasp dk dasd adasdas",
+            owner: "Eletro it.",
+            rating: "* * * *",
+            price: "R$ 450,00"
+        },
+        {
+            title: "Monitor Dell LG, 150hz, FHD",
+            owner: "SAMUNG",
+            rating: "* * * * *",
+            price: "R$ 900,00"
+        }
+    ]
+
     return(
         <div>
 
             <ProfileHeader/>
 
-            <div className="mt-2 bg-dark-border w-11/12 block mx-auto rounded-md py-3">
+            {productList.map(product => (
+                <div className="md:w-3/5
+                my-5 bg-dark-border w-11/12 block mx-auto rounded-md py-3">
 
-                <ul className="mt-1 mx-2 grid grid-cols-2">
+                <ul className="mt-1 grid grid-cols-2">
 
-                    <span className="w-11/12 h-auto block bg-slate-50 rounded-lg"></span>
+                    <span className="md:h-52 md:w-60
+                    w-11/12 h-32 block bg-darkest-border rounded-lg"></span>
 
-                    <div>
+                    <div className="">
                         <li>
-                            <h2 className="font-bold">Produto A</h2>
+                            <h2 className="font-bold">{product.title}</h2>
                         </li>
                         <li>
-                            <h3 className="w-3/5">Descrição do produto A que é assim e assado</h3>
-                        </li>
-                    </div>
-                </ul>
-
-            </div>
-
-            <div className="mt-2 bg-sky-600 w-11/12 block mx-auto rounded-md py-3">
-
-                <ul className="mt-1 mx-2 grid grid-cols-2">
-
-                    <span className="w-11/12 h-auto block bg-slate-50 rounded-lg"></span>
-
-                    <div>
-                        <li>
-                            <h2 className="font-bold">Produto B</h2>
+                            <h3 className="w-3/5 text-xs opacity-80">{product.owner}</h3>
                         </li>
                         <li>
-                            <h3 className="w-3/5">Descrição do produto B que é assado e assim</h3>
+                            <h3 className="w-3/5 text-xl opacity-80">{product.rating}</h3>
+                        </li>
+                        <li>
+                            <h3 className="w-3/5 pt-24 h-32 font-medium">{product.price}</h3>
                         </li>
                     </div>
                 </ul>
 
             </div>
+            ))}
 
         </div>
     )
