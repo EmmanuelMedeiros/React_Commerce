@@ -7,7 +7,7 @@ function WishList() {
 
             <ProfileHeader/>
 
-            <div className="mt-2 bg-darker-theme w-11/12 block mx-auto rounded-md py-3">
+            <div className="mt-2 bg-dark-border w-11/12 block mx-auto rounded-md py-3">
 
                 <ul className="mt-1 mx-2 grid grid-cols-2">
 
